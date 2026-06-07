@@ -47,7 +47,7 @@ function handleLogout() {
         <Coffee :size="22" stroke-width="1.75" class="text-(--c-accent)" />
         <span
           class="font-['Playfair_Display',serif] font-bold text-(--c-bg) text-[22px] tracking-[-0.01em]"
-          >Drift Coffee</span
+          >Ember Coffee</span
         >
       </RouterLink>
 
