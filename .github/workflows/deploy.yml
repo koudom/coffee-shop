@@ -1,0 +1,38 @@
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build and Deploy
+        run: |
+          set -e
+
+          docker build -t coffee-shop:latest .
+
+          docker rm -f coffee-shop || true
+
+          docker run -d \
+            --name coffee-shop \
+            -p 8081:8080 \
+            --restart unless-stopped \
+            coffee-shop:latest
+
+          sleep 5
+
+          if docker ps --format '{{.Names}}' | grep -q '^coffee-shop$'; then
+            echo "Deploy successful"
+          else
+            echo "Deploy failed"
+            docker logs coffee-shop || true
+            exit 1
+          fi
+
+          docker image prune -f
