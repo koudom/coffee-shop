@@ -20,7 +20,7 @@ function onImageLoad(id: number) {
         <h1
           class="text-5xl font-bold mb-2 font-['Playfair_Display',serif] text-(--c-dark)"
         >
-          Draft coffee
+          Coffee UC
         </h1>
         <p class="text-base text-(--c-muted) mb-8">
           Specialty coffee, crafted daily. new flever!
