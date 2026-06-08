@@ -23,7 +23,7 @@ function onImageLoad(id: number) {
           Draft coffee
         </h1>
         <p class="text-base text-(--c-muted) mb-8">
-          Specialty coffee, crafted daily.
+          Specialty coffee, crafted daily. new flever!
         </p>
         <RouterLink to="/menu" class="btn-primary no-underline inline-block">
           View Menu
