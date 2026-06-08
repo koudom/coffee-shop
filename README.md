@@ -1,10 +1,10 @@
-# The UC Coffee — Coffee Shop SPA
+# The UC Coffee_333 — Coffee Shop SPA
 
 A warm brutalist coffee shop single-page application built with Vue 3, TypeScript, and Vite.
 
 ## About
 
-The UC Coffee is a demo coffee shop web app featuring:
+The UC Coffee_333 is a demo coffee shop web app featuring:
 
 - **Menu browsing** — Browse coffee and food items by category
 - **Shopping cart** — Add/remove items, adjust quantities, persisted to session storage
@@ -65,6 +65,6 @@ docker run -p 8080:8080 coffee-shop
 | jane@example.com      | password | Customer |
 
 The login form auto-fills with the customer account by default.
-The UC Coffee
+The UC Coffee_333
 
 # coffee-shop
